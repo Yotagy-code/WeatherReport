@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <div class="logo">⛅ WeatherNow</div>
+            <button class="location-btn" id="changeLocationBtn">
+                <span>📍</span>
+                <span>Change Location</span>
+            </button>
+        </div>
+
+        <div class="main-grid">
+            <div class="card main-weather">
+                <div class="city-info">
+                    <div class="city-name" id="cityName">Loading...</div>
+                    <div class="country-badge" id="countryCode">--</div>
+                </div>
+
+                <div class="weather-display">
+                    <div class="temp-section">
+                        <div class="temperature-large" id="mainTemp">--°</div>
+                        <div class="condition-text" id="mainCondition">Loading...</div>
+                        <div class="date-time" id="dateTime">--</div>
+                    </div>
+                    <div class="weather-icon-main" id="mainIcon">☀️</div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-label">Precipitation</div>
+                        <div class="stat-value" id="precipitation">--%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Humidity</div>
+                        <div class="stat-value" id="humidity">--%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">Wind Speed</div>
+                        <div class="stat-value" id="wind">-- km/h</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card forecast-section">
+                <div class="forecast-title">5-Day Forecast</div>
+                <div class="forecast-list" id="forecastList">
+                    <div class="loading">Loading forecast...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="locationModal">
+        <div class="modal-content">
+            <h2 class="modal-title">Change Location</h2>
+            <input type="text" class="search-input" id="cityInput" placeholder="Enter city name...">
+            <div class="modal-buttons">
+                <button class="btn btn-primary" id="searchBtn">Search</button>
+                <button class="btn btn-secondary" id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
