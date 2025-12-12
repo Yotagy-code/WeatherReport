@@ -103,7 +103,7 @@ IP Geolocation API (ipapi)
 Модальное Окно: Позволяет пользователю вводить название города и получать прогноз для нового местоположения.
 
 Проект в Figma:
-https://www.figma.com/design/22BRsMaa9edh2UdXdjx0hq/Weather-App-Template?node-id=0-1&t=YYEHqlQ5Y4TKXcZz-1
+https://www.figma.com/design/DML0e0C8jnSl8Z03o4bmzg/WeatherApp?node-id=0-1&t=GL6m62sX7qrT3Oxd-1
 
 Лицензия
 
